@@ -1,0 +1,24 @@
+{% include header.html %}
+
+<body class="ma0 pa2 pa4-ns bg-white dark-gray sans-serif lh-copy">
+
+  <p class="clip"><a href="#content">Skip to content</a></p>
+
+  <div class="measure center">
+
+    {% if page.is_home %}
+    {% else %}
+    <h1 class="ma0 f5 lh-title"><a href="/" class="dark-gray no-underline">{{ site.title }}</a></h1>
+    {% endif %}
+
+    <main id="content">
+      <article>
+
+        <h1 class="f3 lh-title">{{ page.title }}</h1>
+
+        {{ content}}
+
+      </article>
+    </main>
+  </div>
+{% include footer.html %}

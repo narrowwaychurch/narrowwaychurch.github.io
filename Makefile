@@ -10,6 +10,9 @@ build:
 build-once:
 	docker-compose run --rm jekyllproc jekyll build
 
+build-debug:
+	docker-compose run --rm jekyllproc bash
+
 bundle-install:
 	docker-compose run --rm jekyllproc bundle install
 
