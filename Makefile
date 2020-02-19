@@ -1,17 +1,17 @@
 up:
-	docker-compose -f docker/docker-compose.yml up -d nginx
+	docker-compose up -d nginx
 
 down:
-	docker-compose -f docker/docker-compose.yml down
+	docker-compose down
 
 build:
-	docker run --rm -it -v `pwd`:/srv/jekyll -v `pwd`/vendor/bundle:/usr/local/bundle jekyll/jekyll:3.8 jekyll build
+	docker-compose run --rm jekyllproc jekyll build --watch
 
-build-watch:
-	docker run --rm -it -v `pwd`:/srv/jekyll -v `pwd`/vendor/bundle:/usr/local/bundle jekyll/jekyll:3.8 jekyll build --watch
+build-once:
+	docker-compose run --rm jekyllproc jekyll build
 
 bundle-install:
-	docker run --rm -it -v `pwd`:/srv/jekyll -v `pwd`/vendor/bundle:/usr/local/bundle jekyll/jekyll:3.8 bundle install
+	docker-compose run --rm jekyllproc bundle install
 
 bundle-update:
-	docker run --rm -it -v `pwd`:/srv/jekyll -v `pwd`/vendor/bundle:/usr/local/bundle jekyll/jekyll:3.8 bundle update
+	docker-compose run --rm jekyllproc bundle update
