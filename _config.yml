@@ -1,13 +1,13 @@
-title: Holiness Fellowship
-name: Holiness Fellowship
+title: Narrow Way Church
+name: Narrow Way Church
 description: >-
-  At the Holiness Fellowship, our focus is holiness in the Wesleyan tradition.
+  At the Narrow Way Church, our focus is to strive to follow Jesus as he leads us on the narrow way.
 baseurl: ""
-url: "https://holinessfellowship.github.io"
+url: "https://narrowwaychurch.github.io"
 
 author: Matthew E. Denson
 email: matthew@densons.org
-facebook_username: Sequim-Holiness-Church-109701320399932
+facebook_username: Narrow Way Church
 
 # plugins:
 #   - jekyll-feed
