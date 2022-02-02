@@ -15,14 +15,27 @@
 
 // Some empty media queries
 // Use these if you want to make responsive custom classes
+header .cover {
+  background:url(/assets/images/bg-mobile.jpg) no-repeat center right;
+  background-size: cover;
+}
 
 @media #{$breakpoint-not-small} {
+  header .cover {
+    background:url(/assets/images/bg-medium.jpg) no-repeat center left;
+    background-size: cover;
+  }
 }
 
 @media #{$breakpoint-medium} {
+
 }
 
 @media #{$breakpoint-large} {
+  header .cover {
+    background:url(/assets/images/bg-wide.jpg) no-repeat center left;
+    background-size: cover;
+  }
 }
 
 
