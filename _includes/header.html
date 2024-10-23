@@ -21,13 +21,17 @@
     <link rel="icon" type="image/png" href="/assets/images/cross-196.png" sizes="196x196">
     <link rel="icon" type="image/png" href="/assets/images/cross-512.png" sizes="512x512">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
     {% if site.css == 'inline' %}
     <style>
       {% capture inline-styles %}
       {% include style.scss %}
       {% endcapture %}
       {{ inline-styles | scssify }}
-  </style>
+    </style>
     {% else %}
       <link href="/css/style.css" rel="stylesheet">
     {% endif %}
