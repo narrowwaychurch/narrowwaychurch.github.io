@@ -57,3 +57,6 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
+include:
+  - .htaccess
+
