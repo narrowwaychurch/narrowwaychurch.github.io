@@ -15,16 +15,54 @@
 
 // Some empty media queries
 // Use these if you want to make responsive custom classes
-@media #{$breakpoint-not-small} {
+article {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+}
+footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2em 0;
+}
 
+@media #{$breakpoint-not-small} {
+  article {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em 20px;
+  }
 }
 
 @media #{$breakpoint-medium} {
-
+  article {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em 50px;
+  }
 }
 
 @media #{$breakpoint-large} {
-
+  article{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 70px;
+  }
+  footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em 70px;
+  }
 }
 
 
